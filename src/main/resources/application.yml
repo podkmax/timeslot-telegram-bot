@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: timeslot-telegram-bot
+  datasource:
+    url: "jdbc:postgresql://localhost:5435/postgres"
+    username: timeslot
+    password: timeslot
+    hikari:
+      maximum-pool-size: 10
+bot:
+  bot-name: TimeslotZernoBot
+  bot-token: 7008151001:AAEVyDtVJ13EG_jA6ArvsIQ7TEV2Ujda-7Q
+client:
+  timeslot-parser:
+    url: "http://localhost:8082"
+server:
+  port: 8083
