@@ -78,7 +78,7 @@
         <repository>
             <id>local-maven-repo</id>
             <name>Local maven repo only for one art</name>
-            <url>file://home/podkmax/maven-repo</url>
+            <url>file://opt/repo</url>
         </repository>
     </repositories>
 
