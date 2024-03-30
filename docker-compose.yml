@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  timeslot-tg-bot:
+    build: .
+    image: timeslot-telegram-bot
+    container_name: timeslot-telegram-bot
+    ports:
+      - "8083:8080"
+  db:
+    container_name: timeslot-tg-bot-db
+    image: postgres
+    restart: always
+    volumes:
+      - /home/podkmax/postgres/timeslot-telegram-bot:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: timeslot
+      POSTGRES_USER: timeslot

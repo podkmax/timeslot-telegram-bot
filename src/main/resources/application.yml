@@ -2,7 +2,7 @@ spring:
   application:
     name: timeslot-telegram-bot
   datasource:
-    url: "jdbc:postgresql://localhost:5435/postgres"
+    url: "jdbc:postgresql://db:5432/postgres"
     username: timeslot
     password: timeslot
     hikari:
@@ -12,6 +12,6 @@ bot:
   bot-token: 7008151001:AAEVyDtVJ13EG_jA6ArvsIQ7TEV2Ujda-7Q
 client:
   timeslot-parser:
-    url: "http://localhost:8082"
+    url: "http://timeslot-parser:8082"
 server:
   port: 8083
