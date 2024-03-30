@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.timeslot</groupId>
+  <artifactId>timeslot-parser-api</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240330140819</lastUpdated>
+  </versioning>
+</metadata>
