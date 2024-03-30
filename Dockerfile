@@ -2,7 +2,6 @@ FROM debian:stable AS build
 WORKDIR /build
 COPY . .
 ADD https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb /opt
-ADD maven-repo /opt/repo
 RUN apt-get update && apt-get -y install /opt/jdk-22_linux-x64_bin.deb && apt-get install -y maven && apt-get clean
 RUN mvn clean package -DskipTests=true
 
