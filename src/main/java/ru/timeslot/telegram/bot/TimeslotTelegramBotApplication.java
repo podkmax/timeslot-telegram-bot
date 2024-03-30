@@ -12,7 +12,7 @@ import ru.timeslot.telegram.bot.configuration.BotProperties;
 @EnableConfigurationProperties({
         BotProperties.class
 })
-@ComponentScan("ru.timeslot.parser")
+@ComponentScan({"ru.timeslot.parser", "ru.timeslot.telegram.bot"})
 public class TimeslotTelegramBotApplication {
 
     public static void main(String[] args) {
