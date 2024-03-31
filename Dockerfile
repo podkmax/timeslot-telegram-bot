@@ -10,5 +10,5 @@ WORKDIR /app
 COPY --from=build /opt/jdk-22_linux-x64_bin.deb /opt
 RUN apt-get update && apt-get install -y /opt/jdk-22_linux-x64_bin.deb && apt-get clean
 COPY --from=build /build/target/timeslot-telegram-bot-0.0.1-SNAPSHOT.jar ./
-EXPOSE 8082
+EXPOSE 8083
 ENTRYPOINT ["java", "-showversion", "-jar", "/app/timeslot-telegram-bot-0.0.1-SNAPSHOT.jar"]

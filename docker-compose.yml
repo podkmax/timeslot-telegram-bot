@@ -6,7 +6,7 @@ services:
     image: timeslot-telegram-bot
     container_name: timeslot-telegram-bot
     ports:
-      - "8083:8080"
+      - "8083:8083"
   db:
     container_name: timeslot-tg-bot-db
     image: postgres
