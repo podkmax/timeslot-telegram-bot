@@ -4,6 +4,7 @@ services:
   timeslot-tg-bot:
     build: .
     image: timeslot-telegram-bot
+    restart: always
     container_name: timeslot-telegram-bot
     ports:
       - "8083:8083"
